@@ -1,10 +1,13 @@
 import pandas as pd
 import numpy as np
 import pickle
+import os
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 # Load the trained model
-model = pickle.load(open('C:/Users/user/ashish/ml/Model_big_mart/classifier.pkl', 'rb'))
+model_path = os.path.join(os.getcwd(), "classifier.pkl")
+model = pickle.load(open(model_path, "rb"))
+# model = pickle.load(open('C:/Users/user/ashish/ml/Model_big_mart/classifier.pkl', 'rb'))
 encoder=LabelEncoder()
 
 def predict_sales(input_data):
