@@ -27,9 +27,6 @@ Users can enter product and outlet information, and the application predicts the
 
 ---
 
-
----
-
 # 📊 Dataset Information
 
 The dataset contains information about products and BigMart outlets.
