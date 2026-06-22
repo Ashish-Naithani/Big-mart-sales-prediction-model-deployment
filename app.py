@@ -4,6 +4,8 @@ import pickle
 import os
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
+from xgboost import XGBRegressor
+
 # Load the trained model
 model_path = os.path.join(os.getcwd(), "classifier.pkl")
 model = pickle.load(open(model_path, "rb"))
